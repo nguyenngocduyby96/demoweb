@@ -553,6 +553,11 @@ pre code {
   margin-left: auto;
 }
 
+  @font-face {
+    font-family: 'Madera Extra Bold';
+    src: URL('/assets/fonts/Madera\ Extra\ Bold.ttf') format('truetype');
+  }  
+
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;
@@ -10214,12 +10219,13 @@ body {
   background-size: cover;
 }
 .masthead h1 {
-  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Madera Extra Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  /* -webkit-text-fill-color: transparent; */
   -webkit-background-clip: text;
           background-clip: text;
 }
@@ -10342,4 +10348,7 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+.spacing-text{
+  word-spacing: 6px;
 }
